@@ -17,6 +17,15 @@ public class IfStatement {
      * @return x if bool is true. if bool is false, return y.
      */
     public int ifExample(boolean bool, int x, int y){
-        return 0;
+        if(bool){
+            return x;
+        }else{
+            return y;
+        }
+    }
+    public static void main(String[] args){
+        IfStatement i = new IfStatement();
+        System.out.println(i.ifExample(true, 0, 1));
     }
 }
+

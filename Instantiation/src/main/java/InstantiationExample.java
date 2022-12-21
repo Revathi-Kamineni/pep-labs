@@ -1,4 +1,3 @@
-
 public class InstantiationExample {
     /**
      * Java relies very heavily on OOP, so all of our code will rely on Objects. Before we write our own objects,
@@ -17,7 +16,23 @@ public class InstantiationExample {
      *
      * @return any object.
      */
-    public Object instantiateANewObject(){
-        return null;
+    public String instantiateANewObject(){
+        return "abc";
+    }
+    /**
+     * @param args
+    
+     */
+    public InstantiationExample(){
+
+    }
+    /**
+     * @param args
+     * @param instantiateANewObject
+     */
+    public static void main(String[] args){
+        InstantiationExample i = new InstantiationExample();
+           System.out.println(i.instantiateANewObject());
+        
     }
 }

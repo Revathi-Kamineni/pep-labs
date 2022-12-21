@@ -15,10 +15,12 @@ public class Expressions {
      */
     public boolean returnBoolean(boolean b){
        
-        System.out.println(b);
-       
+       if(b){
+        return true;
+       }else{
         return false;
     }
+}
 
 
     /**
@@ -28,8 +30,11 @@ public class Expressions {
      */
     public boolean returnNot(boolean b){
       
-        System.out.println(b);
-        return false;
+        if(b){
+            return false;
+        }else{
+            return true;
+        }
     }
 
     /**
@@ -40,9 +45,11 @@ public class Expressions {
      */
     public boolean returnAnd(boolean b1, boolean b2){
       
-        System.out.println(b1&b2);
+       if(b1&b2){
         return true;
-     
+       }else{
+        return false;
+       }
     }
 
     /**
@@ -53,9 +60,18 @@ public class Expressions {
      */
     public boolean returnOr(boolean b1, boolean b2){
        
-        System.out.println(b1|b2);
+        if(b1|b2){
+            return true;
+        }else{
         return false;
     }
-
+}
+public static void main(String[] args){
+    Expressions e = new Expressions();
+    System.out.println(e.returnBoolean(true));
+    System.out.println(e.returnNot(false));
+    System.out.println(e.returnAnd(true, false));
+    System.out.println(e.returnOr(true, true));
+}
 
 }

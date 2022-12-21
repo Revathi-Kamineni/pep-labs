@@ -30,11 +30,7 @@ public class Expressions {
      */
     public boolean returnNot(boolean b){
       
-        if(b){
-            return false;
-        }else{
-            return true;
-        }
+        return !b;
     }
 
     /**
@@ -45,11 +41,7 @@ public class Expressions {
      */
     public boolean returnAnd(boolean b1, boolean b2){
       
-       if(b1&b2){
-        return true;
-       }else{
-        return false;
-       }
+       return b1&b2;
     }
 
     /**
@@ -60,11 +52,7 @@ public class Expressions {
      */
     public boolean returnOr(boolean b1, boolean b2){
        
-        if(b1|b2){
-            return true;
-        }else{
-        return false;
-    }
+       return b1|b2;
 }
 public static void main(String[] args){
     Expressions e = new Expressions();
